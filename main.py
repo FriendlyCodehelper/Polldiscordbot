@@ -51,7 +51,7 @@ async def poll(ctx, title, *names):
         description="\n".join(map(lambda x: f'`{x}` : 0 votes', names)),
         color=0x58D68D
     )
-    embed.set_footer(text='OP poll bot | Owner: Akg#2349')
+    embed.set_footer(text='Making polls now are more easy :D| Programmed by The Dark Side#3255')
 
     route = Route('POST', '/channels/{channel_id}/messages', channel_id=ctx.channel.id)
     await bot.http.request(route, json={
@@ -84,5 +84,5 @@ async def on_socket_response(msg):
     })
 
 
-bot.run('ODkwODE0Njg3OTc1OTY4ODA5.YU1R1A.T9U5km5ysA32JWr_eiJ1-PyT5iU')
+bot.run('Yourtokenhere')
 
